@@ -29,13 +29,13 @@ public class card47 {
             Double exponentValue = hashMap.get("exponent");
             result = 1;
             if (exponentValue < 0) {
-                for (int i = 0; i < -(exponentValue); i++) {
+                for (int loop = 0; loop < -(exponentValue); loop++) {
                     result *= baseValue;
                 }
                 result = 1 / result;
                 hashMap.put("result", result);
             } else {
-                for (int i = 0; i < exponentValue; i++) {
+                for (int loop = 0; loop < exponentValue; loop++) {
                     result *= baseValue;
                 }
                 hashMap.put("result", result);
